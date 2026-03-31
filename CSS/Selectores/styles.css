@@ -1,0 +1,9 @@
+.faltante {
+    color: red;
+}
+.activo {
+    color: orange;
+}
+#ingrediente-secreto {
+    color: yellow;
+}

@@ -1,0 +1,20 @@
+li {
+    color: red;
+    font-family: Dalto;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    line-height: 3;
+    letter-spacing: 4px;
+
+}
+h1 {
+    font-family: Dalto;
+    font-weight: 100;
+    text-align: center;
+    font-size: 40px;
+}

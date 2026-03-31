@@ -1,0 +1,10 @@
+div {
+    background: red;
+    width: 200px;
+    margin:  auto;
+    text-align: center;
+    border-top: 5px solid blue;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
