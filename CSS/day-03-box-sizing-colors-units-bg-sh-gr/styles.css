@@ -1,0 +1,85 @@
+/* 1. RESET - ALWAYS USE IT AT THE BEGINNING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    /* I practiced with the bg options to put an image 
+    as a cover and understood the atributes of repeat and size ,
+     all of these can be defined and reduced w background: */
+   /* background-image: url('images/angry.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    /* In here, I tried different ways to change de colors like hexagesimal, rgb or by color name */
+    /* About more stuff with bg, */
+    background: #48E8; 
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+
+    /* Tried with a text how it looked and how the background and text colors must be aligned w each other */
+ 
+    color: rgb(0, 0, 0);
+}
+
+.box-default { 
+    /* In this way, the box content is 100px 
+    100px but the box in general is way bigger*/
+    padding: 25px;
+    border: 10px solid black;
+}
+
+.box-new { 
+    /* By using border box here, it automatically calculates 
+    everything in order for the box to be 100px 100px ,
+    no matter how much the other aspects reduce*/
+    box-sizing: border-box;
+    padding: 25px;
+    border: 10px solid black;
+}
+
+
+/* */
+.units-practice {
+    /* Practiced with the different types of gradientes*/
+    background: linear-gradient(to right, gray, white);
+    border-left: 10px solid black;
+    margin: 100px;
+    padding: 20px;
+    font-family: sans-serif;
+    width: 30%;
+}
+
+.h2-modifications {
+    color: black;
+    margin-top: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.p-modifications {
+    margin-top: 0;
+    text-align: left;
+    color: rgb(121, 109, 109);
+}
+
+
+.shadows-practice {
+    background: white;
+    border-left: 10px solid black;
+    margin: 100px;
+    padding: 20px;
+    font-family: sans-serif;
+    width: 30%;
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.8);
+    min-height: 100px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+    </head>
+    <body>
+
+        <form>
+
+            <!-- Text → single line text input -->
+            <input type="text" name="username" placeholder="Username">
+
+            <!-- Email → validates email format automatically -->
+            <input type="email" name="email" placeholder="Email">
+
+            <!-- Password → hides the characters -->
+            <input type="password" name="password" placeholder="Password">
+
+            <!-- Number → only accepts numbers -->
+            <input type="number" name="age" placeholder="Age">
+
+            <!-- Tel → phone number -->
+            <input type="tel" name="phone" placeholder="Phone">
+
+            <!-- URL → validates url format automatically -->
+            <input type="url" name="website" placeholder="https://yourwebsite.com">
+
+            <!-- Date → date picker -->
+            <input type="date" name="birthdate">
+
+            <!-- Time → time picker -->
+            <input type="time" name="time">
+
+            <!-- Color → color picker -->
+            <input type="color" name="color">
+
+            <!-- Range → slider between two values -->
+            <input type="range" name="volume" min="0" max="100">
+
+            <!-- Checkbox → true/false option -->
+            <input type="checkbox" name="terms"> Accept terms
+
+            <!-- Radio → select ONE option from a group -->
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+
+            <!-- File → upload a file -->
+            <input type="file" name="avatar">
+
+            <!-- Search → search bar -->
+            <input type="search" name="search" placeholder="Search...">
+
+            <!-- Hidden → not visible, used to send data silently -->
+            <input type="hidden" name="token" value="abc123">
+
+            <!-- Submit → sends the form -->
+            <input type="submit" value="Submit">
+
+            <!-- Reset → clears all fields -->
+            <input type="reset" value="Reset">
+
+        </form>
+
+    </body>
+</html>
