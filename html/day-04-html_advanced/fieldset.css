@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #eee;
+    background-color: #222;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 22px;
+    padding: 10px;
+}
+
+form {
+    background-color:transparent;
+    padding: 10px 20px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 55px rgba(253, 253, 253, 0.100);
+    margin-top: 50px;
+    border-radius: 30px;
+
+}
+
+.form_input {
+    padding: 5px 30px;
+}
+
+input, textarea , select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: none;
+    border: 1px solid #666;
+    box-shadow:0px 0px 15px #0001 ;
+    background-color: transparent;
+    color: white;
+    margin: 6px 0 6px 0 ;
+
+}
+
+textarea {
+    font-size: 14px;
+    font-family: sans-serif;
+    min-width: 100%;
+    resize: none;
+    min-height: 100px; /* Instead of using this, I can use the rows option in html where I write in <textarea rows = "8" */
+    max-height: 200px;
+}
+
+option {
+    background-color: #222;
+}
+
+label {
+    font-size: 0.9em;
+}
+
+.checkbox {
+    width: auto;
+    height: 10px;
+}
+
+fieldset {
+    margin: 20px 0;
+    border: 2px solid #ddd6;
+    border-radius: 5px;
+}
+
+legend {
+    text-transform: uppercase;
+    padding: 0 6px;
+}
