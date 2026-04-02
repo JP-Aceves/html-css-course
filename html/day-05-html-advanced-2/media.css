@@ -1,0 +1,11 @@
+/* Day 5 - Audio & Video */
+
+body {
+    margin: 20px;
+}
+
+video {
+    width: 880px;
+    height: 720px;
+    background-color: #000;
+}

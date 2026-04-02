@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="tables.css">
+  </head>
+  <body>
+    <!-- Tables are used to display data in rows and columns.
+         The structure is: table > thead > tr > th for headers,
+         tbody > tr > td for data rows, and tfoot for the footer row. -->
+    <table>
+      <thead>
+        <tr>
+          <th>Producto</th> <!-- th = table header, bold and centered by default -->
+          <th>Costo</th>
+          <th>Unidades</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Each tr is a row, each td is a cell inside that row -->
+        <tr>
+          <td>Banana</td>
+          <td>$3</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Manzana</td>
+          <td>$3</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Melon</td>
+          <td>$3</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- tfoot is for the footer row, usually totals or summaries -->
+        <tr>
+          <th class="header_total">Total</th>
+          <td class="dato_total" colspan="2">$9</td> <!-- colspan merges cells horizontally -->
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+/* Day 5 - Tables */
+
+td, th {
+    width: auto;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 6px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+th {
+    border: none;
+    border: 1px solid #000
+    
+}
+
+td {
+    color: #4447;
+}
+
+table {
+    width: 100%;
+    border-spacing: 12px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0px 0px 20px #0004;
+}
+
+.header_total , .dato_total{
+    border: none;
+    color: #000;
+    padding: 8px 3px;
+    font-size: 1.2em;
+}
