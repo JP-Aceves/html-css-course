@@ -1,0 +1,36 @@
+/* Day 04 — Advanced Selectors | 2026-04-05 */
+
+/* SELECTOR POR ATRIBUTO */
+/* La imagen solo sera puesta en la pagina si cumple con lo que esta en los corchetes, puedes usar $, ^ */
+img[src="yoperfil.jpeg"] {
+    width: 100%;
+}
+
+/* SELECTOR DESCENDIENTE*/
+/* li es hijo de ul pero puede haber algo de por medio*/
+ul li { 
+    color: #666;
+}
+
+/* SELECTOR POR HIJO DIRECTO */
+/* em es hijo de li */
+li > em { 
+    color: red;
+}
+
+/* SELECTOR DE HERMANO ADYACENTE */
+/* Seleccionar al proximom en este caso le voy a dar estilo a un p que este despues de un h1, pero solo al primer p */
+h1 + p {
+    color: blue;
+}
+
+/* SELECTOR DE HERMANOS GENERALES */
+/* Dar estilo a todos los p que esten despues de un h1 */
+h1 ~ p {
+    color: blue;
+}
+
+li ~ p {
+    color: gray;
+}
+

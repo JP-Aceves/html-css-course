@@ -1,0 +1,18 @@
+/* Day 04 — Inheritance | 2026-04-05 */
+/* El body es padre del h1 y del p, por lo que heredan su color a menos que les pongamos un color propio*/
+
+
+body {
+    color: blue;
+}
+
+div {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+}
+
+
+h1 {
+    color: initial; /* Con su valor inicial, asi no hereda para eso es el initial en todos los casos*/
+    font-family: unset; /* Reseta una configuracion, no se usa mucho esto ni lo otro */
+}

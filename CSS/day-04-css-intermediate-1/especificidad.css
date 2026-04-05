@@ -1,0 +1,15 @@
+/* Day 04 — Specificity | 2026-04-05 */
+
+
+
+#titulo { /* Tiene mas especifidad ya que por id es mas prioritario a*/
+    color: green;
+}
+
+.titulo { /* Tiene mas especifidad ya que por clase es mas prioritario que un h1 */
+    color: red 
+}
+
+h1 {  /* Se toma la ultima modificacion como el valor usado*/
+    color: blue !important  /* La etiqueta important es la mas poderosa por asi decirlo, nada le gana */
+}
