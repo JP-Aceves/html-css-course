@@ -1,0 +1,89 @@
+/* Day 05 — CSS Intermediate 2: Pseudo-classes & Pseudo-elements */
+
+
+
+h1 {
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+
+/* Cuando el mouse esta por encima de este elemento, se pone de este color*/
+h1:hover {
+    color: black;
+    background-color: gray;
+}
+
+/* Mientras el elemento sea clickeado */
+h1:active{ 
+    background-color: white;
+    color: red;
+}
+
+/* SELECCIONANDO EL PRIMER LI */
+li:first-child {
+    color: green;
+}
+
+/* SELECCIONANDO EL ULTIMO LI (no podemos elegir exacto al 2 o al 3 de esta forma*/ 
+li:last-child {
+    color: purple;
+}
+
+/* ASI PODEMOS SELECCIONAR ESPECIFICAMENTE UNO*/ 
+li:nth-child(2) { 
+    color: yellow;
+}
+
+/* ASI PODEMOS SELECCIONAR LOS LI ESPECIFICAMENTE AUNQUE HAYA OTROS TIPOS COMO SPAN */ 
+li:nth-of-type(3) { 
+    color: yellow;
+}
+/* ASI PODEMOS SELECCIONAR CADA "N" NUMERO DE ELEMENTOS */ 
+li:nth-child(3n) { 
+    color: purple;
+    background-color: rgb(159, 159, 159);
+}
+
+
+/* ASI PODEMOS EXCLUIR ELEMENTOS */ 
+.lista li:not(.elem-5){
+    color: red;
+}
+
+
+/* EN ESTE CASO PONEMOS UN BORDE SI ALGO ESTA ESCRITO Y SI NO HAY NADA LO QUITAMOS */ 
+div {
+    border: 2px solid black;
+}
+/* SOLO APLICA SI EL ELEMENTO ESTA VACIO */ 
+div:empty {
+    border: none;
+}
+
+
+/* ESTAS SON PARA MODIFICAR CHECKBOX SI ESTAN CHEQUEADAS O NO */ 
+input[type="checkbox"]{
+    margin: 50px;
+}
+input[type="checkbox"]:checked{
+    margin: 0px;
+}
+
+
+/* SELECCIONANDO ENLACES VISITADOS*/ 
+a:visited{
+    color: green ;
+}
+/* SELECCIONANDO ENLACES NO VISITADOS*/ 
+a:link{
+    color: red;
+}
+
+
+/* SELECCIONANDO INPUTS INVALIDOS*/ 
+input:invalid{
+    color: red;
+}
+

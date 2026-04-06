@@ -1,0 +1,31 @@
+section .elemento1,
+section .elemento2,
+section .elemento3 {
+    color: red;
+}
+
+
+/* ESTA ES UNA MEJOR MANERA DE AGRUPAR, CAMBIA LA ESPECIFIDAD */
+section :is(.elemento1,.elemento2,.elemento3){
+    color: blue;
+}
+
+/* MANTIENE LA ESPECIFIDAD */
+section :where(.elemento1,.elemento2,.elemento3){
+    color: purple;
+}
+
+/* ESTO SE APLICA EN EL CASO DE QUE ELEMENTO 1 EXISTA, SI NO EXISTE NO SE APLICA */
+section:has(.elemento1){
+    background-color: black;
+}
+
+/* AQUI SE MODIFICA EL UL */
+ul:has(+div){
+    
+}
+
+/* AQUI SE MODIFICA EL DIV */
+ul + div {
+
+}

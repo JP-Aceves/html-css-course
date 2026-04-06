@@ -1,0 +1,54 @@
+/* Day 05 — CSS Intermediate 2: Pseudo-elements */
+
+body {
+    font-family: sans-serif;
+    margin: 40px;
+}
+
+h1::first-letter {
+    color: red;
+    font-size: 50px;
+}
+
+/* PRIMERA LETRA DEL PARRAFO */
+.parrafo::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: steelblue;
+    float: left;
+    margin-right: 6px;
+}
+
+/* PRIMERA LINEA DEL PARRAFO */
+.parrafo::first-line {
+    color: gray;
+    font-style: italic;
+}
+
+
+/* CONTENIDO ANTES Y DESPUES DEL ELEMENTO — no existe en el HTML */
+.precio::before {
+    content: "$ ";
+    color: green;
+    font-weight: bold;
+}
+
+.precio::after {
+    content: " USD";
+    color: gray;
+    font-size: 0.85rem;
+}
+
+
+/* TEXTO DENTRO DEL PLACEHOLDER */
+input::placeholder {
+    color: lightcoral;
+    font-style: italic;
+}
+
+
+/* TEXTO SELECCIONADO CON EL MOUSE */
+.seleccionable::selection {
+    background-color: gold;
+    color: black;
+}

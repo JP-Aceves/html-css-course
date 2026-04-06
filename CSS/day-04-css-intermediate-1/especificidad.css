@@ -7,7 +7,7 @@
 }
 
 .titulo { /* Tiene mas especifidad ya que por clase es mas prioritario que un h1 */
-    color: red 
+    color: red; /* Si aqui hubiera un !important, se tomaría como prioridad este porque tiene mas especifidad .titulo */
 }
 
 h1 {  /* Se toma la ultima modificacion como el valor usado*/
